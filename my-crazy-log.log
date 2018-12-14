@@ -1,0 +1,23 @@
+2018-11-27 10:06:04.113  INFO 13668 --- [main] r.SpringBootRestApiCrudApplicationTests  : Starting SpringBootRestApiCrudApplicationTests on RXITM144 with PID 13668 (started by aqili in C:\Users\AqilI\Dropbox\New folder\spring-boot-rest-api-crud)
+2018-11-27 10:06:04.115  INFO 13668 --- [main] r.SpringBootRestApiCrudApplicationTests  : No active profile set, falling back to default profiles: default
+2018-11-27 10:06:05.180  INFO 13668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-27 10:06:05.260  INFO 13668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 1 repository interfaces.
+2018-11-27 10:06:05.705  INFO 13668 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3047c33c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-27 10:06:05.941  INFO 13668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-11-27 10:06:06.138  INFO 13668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-11-27 10:06:06.191  INFO 13668 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-11-27 10:06:06.253  INFO 13668 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2018-11-27 10:06:06.254  INFO 13668 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-11-27 10:06:06.377  INFO 13668 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2018-11-27 10:06:06.562  INFO 13668 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-11-27 10:06:07.092  INFO 13668 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-11-27 10:06:07.901  INFO 13668 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-27 10:06:07.961  WARN 13668 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-11-27 10:06:08.913  INFO 13668 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-11-27 10:06:08.971  INFO 13668 --- [main] r.SpringBootRestApiCrudApplicationTests  : Started SpringBootRestApiCrudApplicationTests in 5.207 seconds (JVM running for 6.147)
+2018-11-27 10:06:09.040  INFO 13668 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-27 10:06:09.040  INFO 13668 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-11-27 10:06:09.042  INFO 13668 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-11-27 10:06:09.045  INFO 13668 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
