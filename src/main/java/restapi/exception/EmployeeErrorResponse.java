@@ -2,13 +2,12 @@ package restapi.exception;
 
 import java.util.Date;
 
-public class CustomerErrorResponse {
-
+public class EmployeeErrorResponse {
     private int status;
     private String message;
     private Date timeStamp;
 
-    public CustomerErrorResponse(int status, String message, Date timeStamp) {
+    public EmployeeErrorResponse(int status, String message, Date timeStamp) {
         this.status = status;
         this.message = message;
         this.timeStamp = timeStamp;

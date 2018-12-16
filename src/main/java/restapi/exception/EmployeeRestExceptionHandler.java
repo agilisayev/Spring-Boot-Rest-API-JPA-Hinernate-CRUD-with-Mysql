@@ -3,23 +3,22 @@ package restapi.exception;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import java.util.Date;
 
-@ControllerAdvice
-public class CustomerRestExceptionHandler extends ResponseEntityExceptionHandler {
+@RestControllerAdvice
+public class EmployeeRestExceptionHandler extends ResponseEntityExceptionHandler {
 
-    @ExceptionHandler(CustomerNotFoundException.class)
-    public final  ResponseEntity<CustomerErrorResponse> handlerException(CustomerNotFoundException cnf) {
-        CustomerErrorResponse errorDetails = new CustomerErrorResponse(HttpStatus.NOT_FOUND.value(), cnf.getMessage(),new Date());
+    @ExceptionHandler(EmployeeNotFoundException.class)
+    public final  ResponseEntity<EmployeeErrorResponse> handlerException(EmployeeNotFoundException cnf) {
+        EmployeeErrorResponse errorDetails = new EmployeeErrorResponse(HttpStatus.NOT_FOUND.value(), cnf.getMessage(),new Date());
         return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
     }
 
     @ExceptionHandler(Exception.class)
-    public final ResponseEntity<CustomerErrorResponse> handleAllExceptions(Exception ex) {
-        CustomerErrorResponse errorDetails = new CustomerErrorResponse(HttpStatus.NOT_FOUND.value(), ex.getMessage(), new Date());
+    public final ResponseEntity<EmployeeErrorResponse> handleAllExceptions(Exception ex) {
+        EmployeeErrorResponse errorDetails = new EmployeeErrorResponse(HttpStatus.NOT_FOUND.value(), ex.getMessage(), new Date());
         return new ResponseEntity<>(errorDetails, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
